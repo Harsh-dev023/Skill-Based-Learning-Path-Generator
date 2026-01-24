@@ -5,7 +5,7 @@ import axios from 'axios';
  * Uses VITE_ prefix for client-side environment variables
  */
 const API_URL = 'https://openrouter.ai/api/v1/chat/completions';
-const MODEL = 'mistralai/mistral-7b-instruct:free';
+const MODEL = 'google/gemma-3-4b-it:free';
 
 /**
  * Get API key from environment variables
