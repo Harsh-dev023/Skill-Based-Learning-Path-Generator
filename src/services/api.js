@@ -5,7 +5,7 @@ import axios from 'axios';
  * Uses VITE_ prefix for client-side environment variables
  */
 const API_URL = 'https://openrouter.ai/api/v1/chat/completions';
-const MODEL = 'anthropic/claude-3.5-sonnet';
+const MODEL = 'google/gemini-2.0-flash-exp:free';
 
 /**
  * Get API key from environment variables
@@ -38,7 +38,7 @@ const makeAIRequest = async (prompt) => {
                         content: prompt
                     }
                 ],
-                max_tokens: 4000,
+                max_tokens: 1500,
                 temperature: 0.7
             },
             {
